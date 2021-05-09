@@ -49,7 +49,7 @@ def plot_results(stations, velocity_model, traveltimes_sample, traveltimes_map_i
 
     # eikonal tomography
     ax = axs[1]
-    ax.set_title('phase velocity (eikonal)')
+    ax.set_title('eikonal tomography')
     ax.set_aspect('equal')
     mean_grad = np.mean(np.array(gradients), axis=0)
     # pcm = ax.contourf(1/mean_grad.T, cmap='RdBu', levels=30) #  vmin=1, vmax=4)
@@ -65,7 +65,7 @@ def plot_results(stations, velocity_model, traveltimes_sample, traveltimes_map_i
     # ---
 
     ax = axs[2]
-    ax.set_title('velocity error')
+    ax.set_title('velocity uncertainty')
     ax.set_aspect('equal')
     std_grad = np.nanstd(np.array(gradients), axis=0)
     # pcm = ax.contourf(std_grad.T, levels=30) # , vmin=1, vmax=4)
@@ -78,4 +78,4 @@ def plot_results(stations, velocity_model, traveltimes_sample, traveltimes_map_i
 
     ax.set_xlim(0, 100)
     ax.set_ylim(0, 100)
-    plt.show()
+    fig.savefig('test.png', dpi=300)
