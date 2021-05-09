@@ -2,7 +2,7 @@
 
 The Eikonal equation relates local phase velocity $c$ with the local gradient of travel times $\nabla T$
 
-$\nabla T = {1 \over c}$.
+$$\nabla T = {1 \over c}$$.
 
 When a wave field is densely sampled, sufficiently dense maps of travel times and thus travel time gradients can be computed. This allows to retrieve phase velocity maps without the need for costly inversion algorithms. In seismology, this has been applied in some cases where spatially homogeneous and sufficiently dense spacing of stations was available. There, seismologists usually exploit the ambient seismic field to compute *estimated Green's Functions* between station-pairs from cross-correlations of the ambient seismic field to measure seismic wave velocities. This approach can provide the spatially and azimuthally dense sampling necessary for Eikonal tomography to function (e.g., Lin et al. 2009, de Ridder et al. 2015).
 
