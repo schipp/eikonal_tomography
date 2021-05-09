@@ -1,5 +1,7 @@
 # Eikonal Tomography - Synthetic Demonstration
 
+[![DOI](https://zenodo.org/badge/365721985.svg)](https://zenodo.org/badge/latestdoi/365721985)
+
 ![example](img/example.png)
 
 The Eikonal equation relates local phase velocity c with the local gradient of travel times ∇T: ∇T = 1/c.
